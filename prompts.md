@@ -2,13 +2,13 @@
 Create a new `secrets.js` file to store my OpenAI API key. `secrets.js` is already linked to `index.html`. Do not use `import` or `export` statements.
 
 ## Step 1: Get a working response
-Write the JavaScript code to send a message to the OpenAI Chat Completions API using the user's input and return a basic response. Use the `OPENAI_API_KEY` stored in `secrets.js`. Display the assistant's reply in the chat window.
+Write the JavaScript code to send a message to the OpenAI Chat Completions API using the user's input and return a basic response. Use the `OPENAI_API_KEY` stored in `secrets.js`. Display the assistant's reply in the chat window. 
 
 ## Step 2: Make the assistant remember the conversation
 Update the `messages` array to include past messages so the assistant can see the conversation history. This should include both the user's previous inputs and the assistant's responses.
 
 ## Step 3: Update the system message to define the assistant's role
-Add this as the system message:  
+Add this as the system message:   
 
 '''  
 You are WayChat, Waymark’s friendly creative assistant.

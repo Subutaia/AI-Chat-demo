@@ -316,6 +316,69 @@ h1 {
   margin-bottom: 8px;
 }
 
+/* Chat bubbles for WayChat messages */
+.chat-message {
+  display: inline-block;
+  max-width: 80%;
+  margin: 8px 0;
+  padding: 14px 18px;
+  border-radius: 18px;
+  font-size: 17px;
+  line-height: 1.5;
+  word-break: break-word;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  clear: both;
+}
+
+/* User messages: right side, blue bubble */
+.chat-message.user {
+  background: linear-gradient(135deg, #3bb0ff 60%, #90ff00 100%);
+  color: #1a1a1a;
+  align-self: flex-end;
+  float: right;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 18px;
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
+  margin-left: 20%;
+  margin-right: 0;
+  text-align: right;
+}
+
+/* Assistant messages: left side, gray bubble */
+.chat-message.assistant {
+  background: #23232d;
+  color: #fff;
+  align-self: flex-start;
+  float: left;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 18px;
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
+  margin-right: 20%;
+  margin-left: 0;
+  text-align: left;
+}
+
+/* Clear floats after each message */
+.chatbot-messages::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Add spacing between messages */
+.chatbot-messages {
+  padding: 18px 12px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  overflow-y: auto;
+  height: 350px;
+  background: #1c1c28;
+  border-radius: 12px;
+}
+
 /* Make sure the Material Icons font is used and sized correctly */
 .material-icons-outlined.chatbot-icon {
   font-family: 'Material Icons Outlined', 'Material Icons', Arial, sans-serif !important;
